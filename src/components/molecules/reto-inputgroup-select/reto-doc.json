@@ -1,0 +1,57 @@
+{
+  "type": "molecula",
+  "name": "IBK Input Group Select",
+  "tag": "ibk-inputgroup-select",
+  "description": "Representa un componente de input select",
+  "attributtes": [
+    {
+      "type": "string",
+      "name": "label",
+      "description": "Texto de la etiqueta del componente",
+      "default-value": "A Label",
+      "values": []
+    },
+    {
+      "type": "string",
+      "name": "errortext",
+      "description": "Indica si el elemento tiene errores",
+      "default-value": "error!",
+      "values": []
+    },
+    {
+      "type": "any",
+      "name": "items",
+      "description": "",
+      "default-value": [
+        { "id": "1", "name": "valor 1" },
+        { "id": "2", "name": "valor 2" },
+        { "id": "3", "name": "valor 3" }
+      ],
+      "values": []
+    },
+    {
+      "type": "boolean",
+      "name": "disable",
+      "description": "Indica si el elemento ha sido deshabilitado",
+      "default-value": false,
+      "values": []
+    },
+    {
+      "type": "boolean",
+      "name": "error",
+      "description": "Indica si el elemento tiene errores",
+      "default-value": false,
+      "values": []
+    }
+  ],
+  "api-events": [
+    {
+      "id": "valueChanged",
+      "name": "Notifica cuando el valor ha cambiado"
+    },
+    {
+      "id": "elementBlur",
+      "name": "Notifica cuando el elemento ha perdido el foco"
+    }
+  ]
+}

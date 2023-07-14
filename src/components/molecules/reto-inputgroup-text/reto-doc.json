@@ -1,0 +1,92 @@
+{
+  "type": "molecula",
+  "name": "IBK Input Group Text",
+  "tag": "ibk-inputgroup-text",
+  "description": "Representa un componente de input text",
+  "attributtes": [
+    {
+      "type": "string",
+      "name": "label",
+      "description": "Texto de la etiqueta del componente",
+      "default-value": "A Label",
+      "values": []
+    },
+    {
+      "type": "select",
+      "name": "type",
+      "description": "Tipo de input",
+      "default-value": "text",
+      "values": ["text", "number", "password", "email", "date", "icon"]
+    },
+    {
+      "type": "string",
+      "name": "value",
+      "description": "Valor de texto del input",
+      "default-value": "Value!",
+      "values": []
+    },
+    {
+      "type": "string",
+      "name": "placeholder",
+      "description": "Placeholder del elemento",
+      "default-value": "Placeholder...",
+      "values": []
+    },
+    {
+      "type": "string",
+      "name": "maxlength",
+      "description": "Cantidad de caracteres máxima del input",
+      "default-value": "128",
+      "values": []
+    },
+    {
+      "type": "string",
+      "name": "minlength",
+      "description": "Cantidad de caracteres mínima del input",
+      "default-value": "1",
+      "values": []
+    },
+    {
+      "type": "string",
+      "name": "errortext",
+      "description": "Texto de error del elemento",
+      "default-value": "error!",
+      "values": []
+    },
+    {
+      "type": "boolean",
+      "name": "disable",
+      "description": "Indica que el elemento ha sido deshabilitado",
+      "default-value": false,
+      "values": []
+    },
+    {
+      "type": "boolean",
+      "name": "error",
+      "description": "Indica que el elemento tiene errores",
+      "default-value": false,
+      "values": []
+    },
+    {
+      "type": "boolean",
+      "name": "lowercase",
+      "description": "Indica si el elemento permite minúsculas",
+      "default-value": false,
+      "values": []
+    }
+  ],
+  "api-events": [
+    {
+      "id": "valueChanged",
+      "name": "Notifica cuando el valor ha cambiado"
+    },
+    {
+      "id": "elementBlured",
+      "name": "Notifica cuando el valor ha perdido el foco"
+    },
+    {
+      "id": "searchClicked",
+      "name": "Notifica cuando se hizo click en la búsqueda"
+    }
+  ]
+}

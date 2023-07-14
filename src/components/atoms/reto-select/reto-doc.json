@@ -1,0 +1,43 @@
+{
+  "type": "atomo",
+  "name": "IBK Select",
+  "tag": "ibk-select",
+  "description": "Representa un select configurable",
+  "attributtes": [
+    {
+      "type": "any",
+      "name": "items",
+      "description": "",
+      "default-value": [
+        { "id": "1", "name": "valor 1" },
+        { "id": "2", "name": "valor 2" },
+        { "id": "3", "name": "valor 3" }
+      ],
+      "values": []
+    },
+    {
+      "type": "boolean",
+      "name": "disable",
+      "description": "Indica si el elemento ha sido deshabilitado",
+      "default-value": false,
+      "values": []
+    },
+    {
+      "type": "boolean",
+      "name": "error",
+      "description": "Indica si el elemento tiene errores",
+      "default-value": false,
+      "values": []
+    }
+  ],
+  "api-events": [
+    {
+      "name": "valueChange",
+      "description": "Notifica cuando el select ha cambiado de valor"
+    },
+    {
+      "name": "elementBlur",
+      "description": "Notifica cuando el select ha perdido el foco"
+    }
+  ]
+}
