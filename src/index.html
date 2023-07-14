@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Lib Design Systems</title>
+
+    <script type="module" src="/build/lib-design-systems.esm.js"></script>
+    <script nomodule src="/build/lib-design-systems.js"></script>
+  </head>
+  <body>
+    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+    <reto-button type="full" text="hola"></reto-button>
+    <reto-button
+            id="assign-claim__btn-understood"
+            text="Entendido"
+            (click)="continue()"
+            color="primary"
+            size="sm"
+          ></reto-button>
+  </body>
+</html>
